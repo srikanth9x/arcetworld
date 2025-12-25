@@ -41,6 +41,7 @@ body {
 #btns {
     height: auto;
     width: 21rem;
+    margin-bottom: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -61,4 +62,27 @@ button {
 
 button:active {
     background: #252422;
+    border-color: #FFFCF2;
 }
+
+#social {
+    width: 21rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.icon  {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    background: #403D39;
+    color: #FFFCF2;
+    border-radius: 50%;
+    border: 2px solid #252422;
+}
+
