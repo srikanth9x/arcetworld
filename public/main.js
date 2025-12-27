@@ -1,7 +1,5 @@
-const title = document.getElementById("title");
+const logo = document.getElementById("logo");
 const spell = document.getElementById("spell");
-const yesBtn = document.getElementById("yes");
-const noBtn = document.getElementById("no");
 const screenTxt = document.getElementById("screen");
 const discord = document.getElementById("discord");
 const instagram = document.getElementById("instagram");
@@ -10,20 +8,26 @@ const youtube = document.getElementById("youtube");
 const github = document.getElementById("github");
 const mail = document.getElementById("mail");
 
-title.addEventListener("click", () => {
+logo.addEventListener("click", () => {
   spell.play();
 });
 
-noBtn.addEventListener("click", () => {
+function no() {
   screenTxt.innerHTML = "That’s okay. <br> If you change your mind, you can always try again.";
-});
+  btns.style.display = "none";
+}
 
-yesBtn.addEventListener("click",() => {
-  screenTxt.innerHTML = "Nice. <br> You’re early. <br> Let’s understand why do you want to build games?"
+function yes() {
+  screenTxt.innerHTML = "Nice. <br> You’re early. <br> Let’s understand why do you want to build games?";
+  btns.style.display = "none";
   setTimeout(() => {
     window.location.href = "https://forms.gle/QDHCkXPj2ZTrscSw6"
   }, 1200);
-});
+}
+
+function home() {
+  window.location.href = "index.html"
+}
 
 discord.addEventListener("click", () => {
   window.location.href = "https://discord.com/users/1453759433716011039/"
